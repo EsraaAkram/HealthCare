@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.esoapps.healthcare">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/healthcare"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.esoapps.healthcare.DoctorUI.MyPatientMedicalFolderActivity"
+            android:label="@string/title_activity_my_patient_medical_folder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.esoapps.healthcare.DoctorsBySpecialityActivity" />
+        <activity
+            android:name="com.esoapps.healthcare.DoctorUI.DoctorAppointments"
+            android:label="@string/title_activity_doctor_appointments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.DoctorEditProfileInfo" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.DisplayDoctorProfileInfo" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.MyPatientInfoActivity" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.MyPatientsActivity" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.DisplayPatientInfo" />
+        <activity android:name="com.esoapps.healthcare.MyDoctorInfoActivity" />
+        <activity android:name="com.esoapps.healthcare.MyDoctorsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.esoapps.healthcare.DoctorLocalisation"
+            android:label="@string/title_activity_doctor_localisation" />
+        <activity android:name="com.esoapps.healthcare.ConsultationInfoActivity" />
+        <activity
+            android:name="com.esoapps.healthcare.MedicalFolderActivity"
+            android:label="@string/title_activity_medical_folder"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.SearchPatientActivity" />
+        <activity
+            android:name="com.esoapps.healthcare.AppointmentsActivity"
+            android:label="@string/title_activity_appointments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.esoapps.healthcare.ScheduleAppointmentActivity" />
+        <activity android:name="com.esoapps.healthcare.DoctorUI.DoctorMenuActivity" />
+        <activity android:name="com.esoapps.healthcare.EditProfileActivity" />
+        <activity android:name="com.esoapps.healthcare.PatientProfileInformations" />
+        <activity android:name="com.esoapps.healthcare.DisplayDoctorInfo" />
+        <activity android:name="com.esoapps.healthcare.DisplayItemDataActivity" />
+        <activity
+            android:name="com.esoapps.healthcare.SearchDoctorSpecialityActivity"
+            android:label="@string/title_activity_search_doctor_speciality"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.esoapps.healthcare.SearchDoctorActivity" />
+        <activity android:name="com.esoapps.healthcare.MenuActivity" />
+        <activity android:name="com.esoapps.healthcare.CreateAccount" />
+        <activity android:name="com.esoapps.healthcare.MainActivity" />
+        <activity android:name="com.esoapps.healthcare.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
